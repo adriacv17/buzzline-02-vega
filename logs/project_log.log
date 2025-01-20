@@ -386,3 +386,359 @@
 2025-01-20 06:40:46.038 | WARNING  | __main__:generate_messages:82 - Producer interrupted by user.
 2025-01-20 06:40:46.039 | INFO     | __main__:generate_messages:87 - Kafka producer closed.
 2025-01-20 06:40:46.039 | INFO     | __main__:main:128 - END producer.
+2025-01-20 12:04:31.791 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-20 12:04:31.792 | INFO     | __main__:main:103 - START producer.
+2025-01-20 12:04:31.793 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-20 12:04:31.823 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-20 12:04:31.823 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 12:04:32.153 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1001, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'OPjzbPmuTHG7HKOtTNKdHg', 'controller_id': 1001}
+2025-01-20 12:04:32.154 | INFO     | __main__:get_kafka_topic:41 - Kafka topic: buzzline
+2025-01-20 12:04:32.154 | INFO     | __main__:get_message_interval:48 - Message interval: 1 seconds
+2025-01-20 12:04:32.154 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 12:04:32.155 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-20 12:04:32.266 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-20 12:04:32.267 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 12:04:32.587 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline' already exists. Clearing it out...
+2025-01-20 12:04:32.587 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 12:04:32.927 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-01-20 12:04:32.928 | INFO     | __main__:main:119 - Kafka topic 'buzzline' is ready.
+2025-01-20 12:04:32.928 | INFO     | __main__:main:125 - Starting message production to topic 'buzzline'...
+2025-01-20 12:04:32.929 | INFO     | __main__:generate_messages:77 - Generated buzz: It might snow soon!
+2025-01-20 12:04:32.931 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': It might snow soon!
+2025-01-20 12:04:33.932 | INFO     | __main__:generate_messages:77 - Generated buzz: It is cold outside.
+2025-01-20 12:04:33.934 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': It is cold outside.
+2025-01-20 12:04:34.935 | INFO     | __main__:generate_messages:77 - Generated buzz: Warm weather is in our future.
+2025-01-20 12:04:34.936 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Warm weather is in our future.
+2025-01-20 12:04:35.937 | INFO     | __main__:generate_messages:77 - Generated buzz: Spring seems so far away.
+2025-01-20 12:04:35.937 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Spring seems so far away.
+2025-01-20 12:04:36.940 | INFO     | __main__:generate_messages:77 - Generated buzz: Have a warm day!
+2025-01-20 12:04:36.941 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Have a warm day!
+2025-01-20 12:04:37.942 | INFO     | __main__:generate_messages:77 - Generated buzz: It might snow soon!
+2025-01-20 12:04:37.944 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': It might snow soon!
+2025-01-20 12:04:38.946 | INFO     | __main__:generate_messages:77 - Generated buzz: It is cold outside.
+2025-01-20 12:04:38.947 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': It is cold outside.
+2025-01-20 12:04:39.949 | INFO     | __main__:generate_messages:77 - Generated buzz: Warm weather is in our future.
+2025-01-20 12:04:39.949 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Warm weather is in our future.
+2025-01-20 12:04:40.951 | INFO     | __main__:generate_messages:77 - Generated buzz: Spring seems so far away.
+2025-01-20 12:04:40.952 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Spring seems so far away.
+2025-01-20 12:04:41.953 | INFO     | __main__:generate_messages:77 - Generated buzz: Have a warm day!
+2025-01-20 12:04:41.954 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Have a warm day!
+2025-01-20 12:04:42.957 | INFO     | __main__:generate_messages:77 - Generated buzz: It might snow soon!
+2025-01-20 12:04:42.957 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': It might snow soon!
+2025-01-20 12:04:43.958 | INFO     | __main__:generate_messages:77 - Generated buzz: It is cold outside.
+2025-01-20 12:04:43.958 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': It is cold outside.
+2025-01-20 12:04:44.960 | INFO     | __main__:generate_messages:77 - Generated buzz: Warm weather is in our future.
+2025-01-20 12:04:44.961 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Warm weather is in our future.
+2025-01-20 12:04:45.963 | INFO     | __main__:generate_messages:77 - Generated buzz: Spring seems so far away.
+2025-01-20 12:04:45.964 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Spring seems so far away.
+2025-01-20 12:04:46.965 | INFO     | __main__:generate_messages:77 - Generated buzz: Have a warm day!
+2025-01-20 12:04:46.966 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Have a warm day!
+2025-01-20 12:04:47.967 | INFO     | __main__:generate_messages:77 - Generated buzz: It might snow soon!
+2025-01-20 12:04:47.967 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': It might snow soon!
+2025-01-20 12:04:48.969 | INFO     | __main__:generate_messages:77 - Generated buzz: It is cold outside.
+2025-01-20 12:04:48.969 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': It is cold outside.
+2025-01-20 12:04:49.971 | INFO     | __main__:generate_messages:77 - Generated buzz: Warm weather is in our future.
+2025-01-20 12:04:49.973 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Warm weather is in our future.
+2025-01-20 12:04:50.974 | INFO     | __main__:generate_messages:77 - Generated buzz: Spring seems so far away.
+2025-01-20 12:04:50.975 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Spring seems so far away.
+2025-01-20 12:04:51.979 | INFO     | __main__:generate_messages:77 - Generated buzz: Have a warm day!
+2025-01-20 12:04:51.980 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Have a warm day!
+2025-01-20 12:04:52.982 | INFO     | __main__:generate_messages:77 - Generated buzz: It might snow soon!
+2025-01-20 12:04:52.983 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': It might snow soon!
+2025-01-20 12:04:53.984 | INFO     | __main__:generate_messages:77 - Generated buzz: It is cold outside.
+2025-01-20 12:04:53.985 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': It is cold outside.
+2025-01-20 12:04:54.986 | INFO     | __main__:generate_messages:77 - Generated buzz: Warm weather is in our future.
+2025-01-20 12:04:54.988 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Warm weather is in our future.
+2025-01-20 12:04:55.989 | INFO     | __main__:generate_messages:77 - Generated buzz: Spring seems so far away.
+2025-01-20 12:04:55.990 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Spring seems so far away.
+2025-01-20 12:04:56.992 | INFO     | __main__:generate_messages:77 - Generated buzz: Have a warm day!
+2025-01-20 12:04:56.993 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Have a warm day!
+2025-01-20 12:04:57.712 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-01-20 12:04:57.713 | INFO     | __main__:main:95 - START consumer.
+2025-01-20 12:04:57.714 | INFO     | __main__:get_kafka_topic:41 - Kafka topic: buzzline
+2025-01-20 12:04:57.714 | INFO     | __main__:get_kafka_consumer_group_id:48 - Kafka consumer group id: default_group
+2025-01-20 12:04:57.714 | INFO     | __main__:main:100 - Consumer: Topic 'buzzline' and group 'default_group'...
+2025-01-20 12:04:57.714 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 12:04:57.714 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline' and group ID='default_group'.
+2025-01-20 12:04:57.824 | INFO     | utils.utils_consumer:create_kafka_consumer:57 - Kafka consumer created successfully.
+2025-01-20 12:04:57.825 | INFO     | __main__:main:106 - Polling messages from topic 'buzzline'...
+2025-01-20 12:04:57.995 | INFO     | __main__:generate_messages:77 - Generated buzz: It might snow soon!
+2025-01-20 12:04:57.995 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': It might snow soon!
+2025-01-20 12:04:58.479 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.479 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 1.
+2025-01-20 12:04:58.480 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.480 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 1.
+2025-01-20 12:04:58.481 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.481 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 1.
+2025-01-20 12:04:58.481 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.481 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 1.
+2025-01-20 12:04:58.482 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.482 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 1.
+2025-01-20 12:04:58.482 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.482 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 2.
+2025-01-20 12:04:58.482 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.482 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 2.
+2025-01-20 12:04:58.482 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.482 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 2.
+2025-01-20 12:04:58.483 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.483 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 2.
+2025-01-20 12:04:58.483 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.483 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 2.
+2025-01-20 12:04:58.483 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.483 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 3.
+2025-01-20 12:04:58.484 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.484 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 3.
+2025-01-20 12:04:58.484 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.484 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 3.
+2025-01-20 12:04:58.485 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.485 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 3.
+2025-01-20 12:04:58.485 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.485 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 3.
+2025-01-20 12:04:58.485 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.486 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 4.
+2025-01-20 12:04:58.486 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.486 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 4.
+2025-01-20 12:04:58.486 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.486 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 4.
+2025-01-20 12:04:58.487 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.487 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 4.
+2025-01-20 12:04:58.488 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.488 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 4.
+2025-01-20 12:04:58.488 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.489 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 5.
+2025-01-20 12:04:58.489 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.489 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 5.
+2025-01-20 12:04:58.491 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.491 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 5.
+2025-01-20 12:04:58.491 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.491 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 5.
+2025-01-20 12:04:58.491 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.491 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 5.
+2025-01-20 12:04:58.492 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.492 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 6.
+2025-01-20 12:04:58.492 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.492 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 6.
+2025-01-20 12:04:58.492 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.492 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 6.
+2025-01-20 12:04:58.493 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.493 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 6.
+2025-01-20 12:04:58.493 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.493 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 6.
+2025-01-20 12:04:58.493 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.493 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 7.
+2025-01-20 12:04:58.494 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.494 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 7.
+2025-01-20 12:04:58.494 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.494 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 7.
+2025-01-20 12:04:58.494 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.494 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 7.
+2025-01-20 12:04:58.495 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.495 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 7.
+2025-01-20 12:04:58.495 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.496 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 8.
+2025-01-20 12:04:58.496 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.496 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 8.
+2025-01-20 12:04:58.496 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.496 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 8.
+2025-01-20 12:04:58.496 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.497 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 8.
+2025-01-20 12:04:58.497 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.497 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 8.
+2025-01-20 12:04:58.497 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.497 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 9.
+2025-01-20 12:04:58.498 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.498 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 9.
+2025-01-20 12:04:58.498 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.498 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 9.
+2025-01-20 12:04:58.499 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.499 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 9.
+2025-01-20 12:04:58.499 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.499 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 9.
+2025-01-20 12:04:58.499 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.500 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 10.
+2025-01-20 12:04:58.500 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.500 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 10.
+2025-01-20 12:04:58.501 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.501 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 10.
+2025-01-20 12:04:58.501 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.501 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 10.
+2025-01-20 12:04:58.502 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.502 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 10.
+2025-01-20 12:04:58.502 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.502 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 11.
+2025-01-20 12:04:58.503 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.503 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 11.
+2025-01-20 12:04:58.504 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.504 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 11.
+2025-01-20 12:04:58.504 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.505 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 11.
+2025-01-20 12:04:58.505 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.505 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 11.
+2025-01-20 12:04:58.505 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.506 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 12.
+2025-01-20 12:04:58.506 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.506 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 12.
+2025-01-20 12:04:58.506 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.507 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 12.
+2025-01-20 12:04:58.507 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.507 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 12.
+2025-01-20 12:04:58.508 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.508 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 12.
+2025-01-20 12:04:58.508 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.508 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 13.
+2025-01-20 12:04:58.509 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.509 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 13.
+2025-01-20 12:04:58.509 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.509 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 13.
+2025-01-20 12:04:58.510 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.510 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 13.
+2025-01-20 12:04:58.510 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.510 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 13.
+2025-01-20 12:04:58.510 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.511 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 14.
+2025-01-20 12:04:58.511 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.511 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 14.
+2025-01-20 12:04:58.511 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.512 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 14.
+2025-01-20 12:04:58.512 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.512 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 14.
+2025-01-20 12:04:58.512 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.512 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 14.
+2025-01-20 12:04:58.513 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.513 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 15.
+2025-01-20 12:04:58.514 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.514 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 15.
+2025-01-20 12:04:58.514 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.514 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 15.
+2025-01-20 12:04:58.515 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.515 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 15.
+2025-01-20 12:04:58.515 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.515 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 15.
+2025-01-20 12:04:58.516 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.516 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 16.
+2025-01-20 12:04:58.516 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.516 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 16.
+2025-01-20 12:04:58.517 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.517 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 16.
+2025-01-20 12:04:58.517 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.518 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 16.
+2025-01-20 12:04:58.518 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.518 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 16.
+2025-01-20 12:04:58.518 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.519 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 17.
+2025-01-20 12:04:58.519 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.519 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 17.
+2025-01-20 12:04:58.521 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.521 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 17.
+2025-01-20 12:04:58.522 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.522 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 17.
+2025-01-20 12:04:58.522 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.523 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 17.
+2025-01-20 12:04:58.523 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.524 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 18.
+2025-01-20 12:04:58.525 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.525 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 18.
+2025-01-20 12:04:58.526 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.526 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 18.
+2025-01-20 12:04:58.526 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.526 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 18.
+2025-01-20 12:04:58.527 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.527 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 18.
+2025-01-20 12:04:58.527 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.528 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 19.
+2025-01-20 12:04:58.528 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.528 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 19.
+2025-01-20 12:04:58.528 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.528 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 19.
+2025-01-20 12:04:58.529 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.529 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 19.
+2025-01-20 12:04:58.529 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.529 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 19.
+2025-01-20 12:04:58.530 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.530 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 20.
+2025-01-20 12:04:58.531 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.531 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 20.
+2025-01-20 12:04:58.532 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.532 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 20.
+2025-01-20 12:04:58.532 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.533 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 20.
+2025-01-20 12:04:58.533 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.534 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 20.
+2025-01-20 12:04:58.534 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.534 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 21.
+2025-01-20 12:04:58.535 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.535 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 21.
+2025-01-20 12:04:58.536 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.536 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 21.
+2025-01-20 12:04:58.536 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.536 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 21.
+2025-01-20 12:04:58.537 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.537 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 21.
+2025-01-20 12:04:58.537 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.537 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 22.
+2025-01-20 12:04:58.537 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.538 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 22.
+2025-01-20 12:04:58.538 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.538 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 22.
+2025-01-20 12:04:58.538 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.538 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 22.
+2025-01-20 12:04:58.538 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.538 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 22.
+2025-01-20 12:04:58.539 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.539 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 23.
+2025-01-20 12:04:58.539 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:58.539 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 23.
+2025-01-20 12:04:58.539 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:04:58.539 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 23.
+2025-01-20 12:04:58.539 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:04:58.540 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 23.
+2025-01-20 12:04:58.540 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:04:58.540 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 23.
+2025-01-20 12:04:58.540 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:04:58.540 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 24.
+2025-01-20 12:04:58.997 | INFO     | __main__:generate_messages:77 - Generated buzz: It is cold outside.
+2025-01-20 12:04:58.997 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': It is cold outside.
+2025-01-20 12:04:59.001 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:04:59.001 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 24.
+2025-01-20 12:04:59.998 | INFO     | __main__:generate_messages:77 - Generated buzz: Warm weather is in our future.
+2025-01-20 12:04:59.999 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Warm weather is in our future.
+2025-01-20 12:05:00.003 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:05:00.003 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 24.
+2025-01-20 12:05:01.001 | INFO     | __main__:generate_messages:77 - Generated buzz: Spring seems so far away.
+2025-01-20 12:05:01.003 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Spring seems so far away.
+2025-01-20 12:05:01.007 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:05:01.007 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 24.
+2025-01-20 12:05:02.005 | INFO     | __main__:generate_messages:77 - Generated buzz: Have a warm day!
+2025-01-20 12:05:02.005 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Have a warm day!
+2025-01-20 12:05:02.008 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:05:02.008 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 24.
+2025-01-20 12:05:03.006 | INFO     | __main__:generate_messages:77 - Generated buzz: It might snow soon!
+2025-01-20 12:05:03.006 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': It might snow soon!
+2025-01-20 12:05:03.009 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:05:03.010 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 25.
+2025-01-20 12:05:04.007 | INFO     | __main__:generate_messages:77 - Generated buzz: It is cold outside.
+2025-01-20 12:05:04.008 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': It is cold outside.
+2025-01-20 12:05:04.011 | INFO     | __main__:process_message:79 - Processing message: It is cold outside.
+2025-01-20 12:05:04.011 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 25.
+2025-01-20 12:05:05.009 | INFO     | __main__:generate_messages:77 - Generated buzz: Warm weather is in our future.
+2025-01-20 12:05:05.009 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Warm weather is in our future.
+2025-01-20 12:05:05.012 | INFO     | __main__:process_message:79 - Processing message: Warm weather is in our future.
+2025-01-20 12:05:05.012 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 25.
+2025-01-20 12:05:06.010 | INFO     | __main__:generate_messages:77 - Generated buzz: Spring seems so far away.
+2025-01-20 12:05:06.010 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Spring seems so far away.
+2025-01-20 12:05:06.013 | INFO     | __main__:process_message:79 - Processing message: Spring seems so far away.
+2025-01-20 12:05:06.014 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 25.
+2025-01-20 12:05:07.011 | INFO     | __main__:generate_messages:77 - Generated buzz: Have a warm day!
+2025-01-20 12:05:07.012 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Have a warm day!
+2025-01-20 12:05:07.016 | INFO     | __main__:process_message:79 - Processing message: Have a warm day!
+2025-01-20 12:05:07.016 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 0 times. The running total of word 'snow' is 25.
+2025-01-20 12:05:08.013 | INFO     | __main__:generate_messages:77 - Generated buzz: It might snow soon!
+2025-01-20 12:05:08.013 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': It might snow soon!
+2025-01-20 12:05:08.016 | INFO     | __main__:process_message:79 - Processing message: It might snow soon!
+2025-01-20 12:05:08.016 | INFO     | __main__:process_message:80 - The current message countains the word 'snow' 1 times. The running total of word 'snow' is 26.
+2025-01-20 12:05:08.434 | WARNING  | __main__:generate_messages:82 - Producer interrupted by user.
+2025-01-20 12:05:08.435 | INFO     | __main__:generate_messages:87 - Kafka producer closed.
+2025-01-20 12:05:08.436 | INFO     | __main__:main:128 - END producer.
+2025-01-20 12:05:15.941 | WARNING  | __main__:main:113 - Consumer interrupted by user.
+2025-01-20 12:05:15.958 | INFO     | __main__:main:118 - Kafka consumer for topic 'buzzline' closed.
+2025-01-20 12:05:15.958 | INFO     | __main__:main:120 - END consumer for topic 'buzzline' and group 'default_group'.
