@@ -1,5 +1,5 @@
 """
-kafka_consumer_case.py
+kafka_consumer_vega.py
 
 Consume messages from a Kafka topic and process them.
 """
@@ -23,6 +23,12 @@ from utils.utils_logger import logger
 #####################################
 
 load_dotenv()
+
+#####################################
+# Running Total Counter for 'snow'
+#####################################
+
+total_snow_count = 0
 
 #####################################
 # Getter Functions for .env Variables
@@ -59,8 +65,19 @@ def process_message(message: str) -> None:
     Args:
         message (str): The message to process.
     """
-    logger.info(f"Processing message: {message}")
+    global total_snow_count # used global to access and modify the total_snow_count counter within function
 
+    # Converted message to all lowercase for easier counting
+    message_lower = message.lower()
+
+    # Split message and count occurences of snow
+    snow_count = message_lower.split().count('snow')
+
+    # add snow count to snow counter
+    total_snow_count += snow_count
+
+    logger.info(f"Processing message: {message}")
+    logger.info(f"The current message countains the word 'snow' {snow_count} times. The running total of word 'snow' is {total_snow_count}.")
 
 #####################################
 # Define main function for this module
